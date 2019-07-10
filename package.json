@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "daemon": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "react": "webpack -d --watch",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,12 @@
     "jquery": "^3.4.1",
     "mongoose": "^5.5.5",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "axios": "^0.18.0",
+    "pg": "^7.10.0",
+    "sequelize": "^5.7.5",
+    "styled-components": "^4.2.0",
+    "body-parser": "^1.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
