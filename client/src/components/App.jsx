@@ -93,6 +93,15 @@ const ProfessionCount = styled(Profession)`
 
 const ProfessionAssignmentBox = styled(ProfessionBox)`
   background-color: #57f25f;
+  height: 200px;
+  margin-top: 28%;
+`;
+
+const ProfessionInputBox = styled.div`
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ProfessionInput = styled.input`
@@ -100,6 +109,8 @@ const ProfessionInput = styled.input`
 `;
 
 const HireButton = styled.button`
+  width: 20%;
+  height: 10%;
 `;
 
 const MilitaryBox = styled(CitizenInfoBox)`
@@ -196,13 +207,15 @@ class App extends React.Component {
                 10,000
               </ProfessionCount>
             </ProfessionCountBox>
-            <ProfessionAssignmentBox>
-              <ProfessionInput />
-              <ProfessionInput />
-              <ProfessionInput />
-              <ProfessionInput />
-              {/* <HireButton> Hire </HireButton> */}
-            </ProfessionAssignmentBox>
+            <ProfessionInputBox>
+              <ProfessionAssignmentBox>
+                <ProfessionInput />
+                <ProfessionInput />
+                <ProfessionInput />
+                <ProfessionInput />
+              </ProfessionAssignmentBox>
+                <HireButton> Hire </HireButton>
+            </ProfessionInputBox>
           </CitizenInfoBox>
           <MilitaryBox>
             <ProfessionBox>
